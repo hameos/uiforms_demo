@@ -14,6 +14,17 @@
 \
 Then follow the next steps:
 
+### Install dependency
+Install the next lib (for debian based):
+```shell
+apt install libmysqlclient-dev
+```
+This will avoid the error that could appear during running the app:
+```
+QSqlDatabase: QMYSQL driver not loaded QSqlDatabase
+available drivers: QPSQL QODBC QMARIADB QMYSQL QSQLITE
+```
+
 ### Clone the project
 Clone the project:
 ```shell
