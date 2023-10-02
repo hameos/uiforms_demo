@@ -40,4 +40,10 @@ docker-compose up
 ```
 
 ### Run uiforms demo
-The folder `uiforms` contains the project, it is built using Qt 6.5, C++ and QML. Open uiforms project with the qt tool `qtcreator`, build it and run the app.
+The folder `uiforms` contains the project, it is built using Qt 6.5, C++ and QML. Building and running the project can be done using `qtcreator` or alternatively from command line. From command line, within project root folder (`uiforms_demo`), execute next commands:
+```shell
+cmake -DCMAKE_PREFIX_PATH=~/Qt/6.5.3/gcc_64 -B build_gcc_64 -S uiforms
+cd build_gcc_64 && make -j$(nproc)
+./appuiforms
+```
+Modify variable CMAKE_PREFIX_PATH to the location of Qt installation in your system.
