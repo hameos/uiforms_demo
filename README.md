@@ -6,8 +6,10 @@
 
 ![uiforms demo](doc/screenshot.png "UIForms demo")
 
+Here is a video showing the app: https://www.youtube.com/watch?v=7X1wH9QP_H0
+
 ### Prerequisites
-- Qt 6.5
+- Qt 6.5.3
 - docker
 - docker-compose
 
